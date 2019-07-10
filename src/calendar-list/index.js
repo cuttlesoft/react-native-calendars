@@ -84,7 +84,9 @@ class CalendarList extends Component {
 
   onLayout(event) {
     if (this.props.onLayout) {
-      this.props.onLayout(event);
+      setTimeout(() => {
+        this.props.onLayout(event);
+    }, 1);
     }
   }
 
